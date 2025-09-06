@@ -1,0 +1,12 @@
+services:
+  license_server:
+    build: .
+    container_name: license_server_container
+    ports:
+      - "8000:8000"
+    volumes:
+      # Este volume garante que o banco de dados sobreviva se o contêiner for recriado
+      - license_db_data:/app
+
+volumes:
+  license_db_data:
