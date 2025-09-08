@@ -20,14 +20,14 @@ Este é um servidor de licenças simples construído com FastAPI que gera e vali
     docker-compose up -d --build
     ```
 
-    O servidor estará disponível em `http://localhost:8000`.
+    O servidor estará disponível em `http://emissao.traduzai.cloud`.
 
 2.  **Verificar o Status do Serviço:**
 
     Você pode verificar se o servidor está a funcionar corretamente acedendo ao endpoint de *health check*:
 
     ```bash
-    curl http://localhost:8000/health
+    curl http://emissao.traduzai.cloud/health
     ```
 
     A resposta deve ser:
@@ -46,4 +46,4 @@ Para gerar um novo código de ativação para um cliente, envie uma requisição
 - **Método:** `POST`
 - **Exemplo de Requisição (cURL):**
   ```bash
-  curl -X POST http://localhost:8000/admin/generate-code# licenceservertraduzai
+  curl -X POST http://emissao.traduzai.cloud/admin/generate-code# licenceservertraduzai

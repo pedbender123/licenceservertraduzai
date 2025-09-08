@@ -7,6 +7,7 @@ services:
     volumes:
       # Este volume garante que o banco de dados sobreviva se o contêiner for recriado
       - license_db_data:/app
+    restart: always
 
 volumes:
   license_db_data:
